@@ -13,6 +13,7 @@
     echo 'However his true identity is that of the great God Sun Wukong (The Monkey King), the leader of the Mount Hwagwa Monkey and one of the Nine Kings of the Sage Realm.';
     $age = 17;
     $raceSpecies = ['God', 'Demon', 'Mount Hwagwa Monkey'];
+    $occupation = ['G.O.H. Participant', 'Student', 'Monkey King', 'Supreme God'];
     $statement1 = 'He cannot be defeated by human beings as he is not human himself.';
     $statement2 = 'To truly defeat him, another Demon or God would have to do that.';
     $combination = $statement1.' '.$statement2;
@@ -27,6 +28,22 @@
         foreach($raceSpecies as $value) {
           echo $value, ',', ' ';
         } 
+      ?>
+    </li>
+    <li>
+      <?php 
+        foreach($occupation as $value) {
+          echo $value, ',', ' ';
+        }
+      ?>
+    </li>
+  </ul>
+  <p>*Double quote examples*</p>
+  <ul>
+    <li>
+      <?php 
+        echo 'his age is $age <br>';  //single quote with a nested variable prints out an string 
+        echo "his age is $age <br>"; //double quote with a nested variable prints out a string with the proper value of the variable
       ?>
     </li>
   </ul>
