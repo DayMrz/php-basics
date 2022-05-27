@@ -100,18 +100,31 @@
   <p>
     Find Position of any specific word: <br>
     <?php echo strpos($combine, 'i'); ?> 
-  </p> <!-- finds the position of the first occurrence of a string inside another string. -->
+  </p> <!-- finds the position of the first occurrence of a string inside another string. 0,1,2,3,... -->
   <p>
     Find Character: <br>
     <?php echo strchr($combine, 'f'); ?>
   </p>
     <!-- //find the first character with that condition, prints the string after that character.  -->
 
+    <hr>
 
-  <ul>
-    <li>
-      
-    </li>
-  </ul>
+  <p>
+    Total Length of string: <br>
+    <?php echo strlen($combine); ?>
+  </p>
+  <p>
+    Trim: <br>
+    <?php echo 'A' . trim('B C D') . 'E'; ?>
+  </p>
+  <p>
+    Find specific and show after: <br>
+    <?php echo strstr($combine, 'brown'); ?>
+  </p>
+  <!-- it is used to find the first occurrence of a string (case sensitive) -->
+  <p>
+    Replace word with new: <br>
+    <?php echo str_replace('brown', 'red', $combine); ?>
+  </p>
 </body>
 </html>
