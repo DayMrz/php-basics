@@ -12,7 +12,7 @@
 
   <?php 
     $firstNumber = 3;
-    $secondNumber = 4;
+    $secondNumber = 50;
     $thirdNumber = 3.65478;
     ?> <br>
     <p>
@@ -53,31 +53,31 @@
     <p>
       <?php echo "is {$thirdNumber} : numeric" . is_numeric($thirdNumber);?>
     </p>
-    <p>
+    <p>Binary:
       <?php echo decbin(3);?>
     </p>
     <!-- decbin is use to convert a decimal number into a binary 
     Output = 11-->
-    <p>
+    <p>Decimal
       <?php echo bindec(11);?>
     </p>
     <!-- bindec is use to convert a binary number into a decimal 
     Output = 3-->
-    <p>
+    <p>Square root
       <?php echo sqrt(8);?>
     </p>
     <!--Use to calculate the square root of a given number.  -->
-    <p>
+    <p>Absolute Value:
       <?php echo abs(-8 + 100);?>
     </p>
     <!-- return the absolute(positive) for a number this function is identical to what we call modulus in math...absolute of a negative number is positive 
     Output = 92-->
-    <p>
+    <p>Power:
       <?php echo pow(2, 5);?>
     </p>
     <!-- returns x raised to the power of y
     2 * 2 * 2 * 2 * 2 = 32 -->
-    <p>
+    <p>Modulas:
       <?php echo fmod(12.3, 3.1);?>
     </p>
     <!-- Parameters: The function takes two parameters as follows:
@@ -86,6 +86,17 @@ $dividend: This parameter takes a float which is to be divided.
 $divisor: This parameter takes a float which is to be used as a divisor. -->
     <!-- example: Input :  $dividend = 2.7,  $divisor = 1.3;   
       Output : 0.1 -->
-
+    <p>Random withing two variables: 
+    <?php echo rand($firstNumber, $secondNumber);?>
+    </p>
+    <!-- returns a random number between the parameters -->
+    <p>Random:
+    <?php echo rand();?>
+    </p>
+    <!-- returns a random integer 10digits -->
+    <?php
+    $number = range(0, 5); 
+    print_r ($number) ;?><br>
+    <!-- crreate an array containing a range of elements from "0" to "5" -->
 </body>
 </html>
