@@ -97,6 +97,11 @@ $divisor: This parameter takes a float which is to be used as a divisor. -->
     <?php
     $number = range(0, 5); 
     print_r ($number) ;?><br>
-    <!-- crreate an array containing a range of elements from "0" to "5" -->
-</body>
+    <!-- create an array containing a range of elements from "0" to "5" -->
+    add:<?php echo $secondNumber = $secondNumber + 2 ;?><br>
+    add:<?php echo $secondNumber += 2 ;?><br>
+    Increment:<?php $secondNumber++; echo $secondNumber ;?><br>
+    Decrement:<?php $secondNumber--; echo $secondNumber;?><br>
+    <?php  ;?>
+  </body>
 </html>
