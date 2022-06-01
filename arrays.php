@@ -32,10 +32,31 @@
   <?php
   $fourEmperors = array('Big Mom', array('Prometheus', 'Zeus', 'Napoleon'), 'Kaido', 'Shanks', 'Blackbeard');
     echo $fourEmperors[0];?>
-    <?php echo $fourEmperors[1][0]?> 
-    <?php echo $fourEmperors[1][1]?> 
-    <?php echo $fourEmperors[1][2]?> 
+  <?php echo $fourEmperors[1][0]?> 
+  <?php echo $fourEmperors[1][1]?> 
+  <?php echo $fourEmperors[1][2]?> 
     <!-- to get value of an array nested in an array -->
+
+    <?php 
+      $marinesCaptains = array('Nezumi', 'Very Good', 'Shu', 'Shangaro', 'Gorilla', 'Tashigi', 'Koby', array('Morgan', 'Smoker', 'Hina', 'Vergo', 'LeMay', 'Moore', 'Trap'));
+    ?>
+    <?php $marinesCaptains[7][51] = 'All-Hunt'?> <br>
+    <?php $marinesCaptains[7][50] = 'T-Bone'?> <br>
+
+    <h2>Array of current and former Marines Captains</h2>
+    <pre>
+      <?php echo print_r($marinesCaptains)?> <br>
+    </pre>
+
+    <!-- associative arrays -->
+    <h2>Children</h2>
+    <p>Age of characters who only appeared in the story as a children</p>
+    <?php 
+    $children = array('name' => 'Tama', 'age' => 8, 'Kozuki Momonosuke' => 8, 'Toko' => 6)
+    ?>
+    
+    <?php  echo $children['name']. ':' ;?> <br>
+    <?php  echo $children['name']. ' '. "has". ' '. $children['age']. ' '. "years old" ;?> <br>
 
 </body>
 </html>
