@@ -97,7 +97,26 @@
     echo in_array(1500000000, $bounties);
     // check if the values exist in an array
   ;?> <br>
-  
+
+  <h3>rsort()</h3>
+  <?php 
+    echo rsort($bounties);
+    print_r($bounties)
+    // Sort an array in descending order
+  ;?> <br>
+
+  <h3>implode()</h3>
+  <?php 
+    $luffyQuote = array('I', 'am', 'gonna', 'be', 'the', 'king', 'of', 'the', 'pirates');
+    echo implode(' ', $luffyQuote);
+    //Join array elements with a string
+  ;?> <br>
+  <h3>explode()</h3>
+  <?php 
+    $luffyQuoteA = 'I am gonna be the king of the pirates';
+    print_r (explode(' ', $luffyQuoteA));
+    //breaks a string into an array
+  ;?> <br>
 
 
 
