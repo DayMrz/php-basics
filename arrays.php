@@ -58,5 +58,48 @@
     <?php  echo $children['name']. ':' ;?> <br>
     <?php  echo $children['name']. ' '. "has". ' '. $children['age']. ' '. "years old" ;?> <br>
 
+
+  <h2>Array Functions</h2>
+
+  <h3>array_pop()</h3>
+  <?php 
+    array_pop($strawHats);
+    print_r($strawHats) 
+  ;?> <br>
+  <!-- Pops the last element from the array. -->
+  <h3>array_push()</h3>
+  <?php 
+    array_push($strawHats, 'Chopper');
+    print_r($strawHats)
+  ;?> <br>
+  <!-- Push values into the array. -->
+
+  <h3>count()</h3>
+  <?php 
+    echo count($bounties);
+    // count elements in an array
+  ;?> <br>
+
+  <h3>max()</h3>
+  <?php 
+    echo max($bounties);
+    // find highest value
+    ;?> <br>
+
+  <h3>min()</h3>
+  <?php 
+    echo min($bounties);
+    // find lowest value
+  ;?> <br>
+
+  <h3>in_array()</h3>
+  <?php 
+    echo in_array(1500000000, $bounties);
+    // check if the values exist in an array
+  ;?> <br>
+  
+
+
+
 </body>
 </html>
